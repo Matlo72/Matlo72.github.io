@@ -1,0 +1,92 @@
+{
+	"id": "com.button.scrollup",
+	"version": "1.0.0",
+	"name": "Scroll up button",
+	"description": "A button to scroll up on click",
+	"newInstancePrefix": "Scrollup",
+	"icon": "https://emi-international.azurewebsites.net/SACScrollJS/scrollup.png",
+	"vendor": "Demo",
+	"eula": "EULA",
+	"license": "1.0",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-button-scrollup",
+			"url": "https://emi-international.azurewebsites.net/SACScrollJS/scrollup/scrollup.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-button-styling",
+			"url": "https://emi-international.azurewebsites.net/SACScrollJS/scrollup/scrollup_styling.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "#485c6b"
+		},
+		"fontColor": {
+			"type": "string",
+			"description": "Font color",
+			"default": "white"
+		},
+		
+		"width": {
+			"type": "integer",
+			"default": 192
+		},
+		"height": {
+			"type": "integer",
+			"default": 32
+		}
+	},
+	"methods" :{
+		"setColor": {
+			"description": "Sets the button color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new button color"
+				}
+			],
+			"body": "this.color = newColor;"
+		},
+
+		"getColor": {
+			"returnType": "string",
+			"description": "Returns the button color.",
+			"body": "return this.color;"
+		},
+
+		"setFontColor": {
+			"description": "Sets the Font color.",
+			"parameters": [
+				{
+					"name": "newFontColor",
+					"type": "string",
+					"description": "The new Font color"
+				}
+			],
+			"body": "this.fontColor = newFontColor;"
+		},
+		"getFontColor": {
+			"returnType": "string",
+			"description": "Returns the Font color.",
+			"body": "return this.fontColor;"
+		}
+	
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Button."
+		}
+	}
+}
+
+ 
